@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/iv_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_bar" />
+        
+        <TextView
+            android:id="@+id/tv_third_top"
+            style="@style/top_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/collect"
+             />
+
+    </RelativeLayout>
+
+    <com.fcapp.beautyimage.LazyScrollView
+        android:id="@+id/waterfall_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_top"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" >
+            
+            <LinearLayout
+                android:id="@+id/waterfall_container"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                 >
+            </LinearLayout>
+
+        </RelativeLayout>
+    </com.fcapp.beautyimage.LazyScrollView>
+    
+</RelativeLayout>

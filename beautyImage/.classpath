@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="lib" path="libs/gson-2.2.2.jar"/>
+	<classpathentry kind="lib" path="libs/mobisageSDK_5.1.jar"/>
+	<classpathentry kind="lib" path="libs/wqadsdk_mango_2.0.2.jar"/>
+	<classpathentry kind="lib" path="libs/umeng_ad_android_sdk_v1.4.4.jar"/>
+	<classpathentry kind="lib" path="libs/GoogleAdMobAdsSdk-6.2.1.jar"/>
+	<classpathentry kind="lib" path="libs/domob_android_sdk_3.1.5.jar"/>
+	<classpathentry kind="lib" path="libs/AppMediaAdAndroidSdk-1.2.0-mangguo.jar"/>
+	<classpathentry kind="lib" path="libs/AdsMOGO_Android_SDK_1.2.5.jar"/>
+	<classpathentry kind="lib" path="libs/InMobiAdNetwork_3.6.2.jar"/>
+	<classpathentry kind="lib" path="libs/Adwo_Android_SDK3.1.jar"/>
+	<classpathentry kind="lib" path="libs/umeng_sdk.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

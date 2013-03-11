@@ -1,0 +1,43 @@
+<resources>
+
+    <string name="app_name">beautyImage</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">萌妹纸</string>
+    <string name="collect">收藏</string>
+    <string name="more">更多</string>
+    <string name="library">图库</string>
+    <string name="net_error">网络错误</string>
+    <string name="back">返回</string>
+    <string name="save">保存</string>
+    <string name="newest">最新</string>
+    
+    <!-- API -->
+    <string name="app_host">http://42.121.130.168:8001</string>
+    <string name="app_host_popup">http://42.121.130.168:8000</string>
+    <string name="home_api">/api/tags</string>
+    <string name="second_api">/api/stacks</string>
+    <string name="home_banner_api">/api/ads</string>
+    <string name="third_api">/api/stack</string>
+    <string name="newest_api">/api/latest</string>
+    <string name="hottest_api">/api/hotest</string>
+    <string name="home_popup">/api/ad</string>
+    
+    <string name="home_waterfall_data">home页面瀑布流数据标识</string>
+    <string name="home_popup_data">home页面popup广告数据标识</string>
+    <string name="second_waterfall_data">二级页面瀑布流数据标识</string>
+    <string name="newest_data">二级页面最细图片数据标识</string>
+    <string name="third_data">二级页面最细图片数据标识</string>
+    <string name="no_need_eTag">不需要eTag</string>
+    <string name="feedback">反馈意见</string>
+    <string name="clear_cache">清空缓存</string>
+    <string name="version">版本号</string>
+    <string name="btn_collect">collect homeTag</string>
+    
+    
+    <!-- 参数 -->
+    <string name="home_classify"></string>
+    
+    
+
+</resources>

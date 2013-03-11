@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:adsmogo="http://www.adsmogo.com"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/iv_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_bar" />
+
+        <TextView
+            android:id="@+id/tv_seconds_top"
+            style="@style/top_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        
+        <TextView
+            android:id="@+id/tv_seconds_back"
+            android:layout_marginTop="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back"
+            android:text="@string/back"
+            android:textSize="14sp"
+            android:paddingLeft="13dp"
+            android:paddingTop="7dp"
+            android:textColor="#FFFFFF"
+            />
+    </RelativeLayout>
+    <com.adsmogo.adview.AdsMogoLayout
+        android:layout_below="@+id/rl_top"
+        android:id="@+id/adsMogoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        adsmogo:appid="85686231f205451c9e3de64ab059537b"
+        adsmogo:express_mode="false"
+         />
+
+    <com.fcapp.beautyimage.LazyScrollView
+        android:layout_below="@+id/adsMogoView"
+        android:id="@+id/waterfall_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/waterfall_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" >
+            </LinearLayout>
+           
+        </RelativeLayout>
+        
+    </com.fcapp.beautyimage.LazyScrollView>
+     
+
+    
+
+</RelativeLayout>

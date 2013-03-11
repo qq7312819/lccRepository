@@ -1,0 +1,136 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fcapp.beautyimage"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".appdata.MyApplication"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" 
+        android:screenOrientation="portrait">
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="512eef8d5270152321000100" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel ID" />
+
+        <meta-data android:value="85686231f205451c9e3de64ab059537b " android:name="ADMOGO_KEY" />
+        
+        <activity
+            android:name="com.umeng.fb.ui.SendFeedback"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.umeng.fb.ui.FeedbackConversations" />
+        <activity
+            android:name="com.umeng.fb.ui.FeedbackConversation"
+            android:configChanges="keyboard" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeActivity" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".CollectActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".MoreActivity" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SecondActivity" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ThirdActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".NewestActivity" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ThirdImageViewActivity" 
+            android:screenOrientation="portrait">
+        </activity>
+
+<!--多盟integration --> 
+        <activity
+            android:name="cn.domob.android.ads.DomobActivity"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+ <!--         安沃 integration --> 
+        <activity
+            android:name="com.adwo.adsdk.AdwoAdBrowserActivity"
+            android:label="@string/app_name" />
+
+ <!--         AdMob integration --> 
+       <!--  <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" /> -->
+        
+ <!--         声明Mogo的Activity --> 
+        <activity
+            android:name="com.adsmogo.adview.AdsMogoWebView"
+            android:label="@string/app_name" >
+        </activity>
+        
+ <!--         声明力美的Activity --> 
+        <activity
+            android:name="com.lmmob.ad.sdk.LmMobAdWebView"
+            android:configChanges="keyboardHidden|orientation" />
+ <!--         声明艾德思奇的Activity和Service --> 
+        <activity
+            android:name="com.mobisage.android.MobiSageActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation" >
+        </activity>
+        <!-- <activity
+            android:name="com.inmobi.androidsdk.IMBrowserActivity"
+            android:configChanges="keyboardHidden|keyboard|screenSize|orientation|smallestScreenSize" /> -->
+        <activity
+            android:name="com.donson.momark.activity.AdActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        
+         <service
+            android:name="com.mobisage.android.MobiSageApkService"
+            android:exported="true" />
+ <!--         注册Service，应用下载所需 -->
+        <service
+            android:name="com.adsmogo.controller.service.UpdateService"
+            android:exported="true"
+            android:process=":remote" />
+ <!--          注册Service，应用被安装所用 --> 
+        <service
+            android:name="com.adsmogo.controller.service.CountService"
+            android:exported="true"
+            android:process=":remote" />
+
+        <service
+            android:name="com.umeng.common.net.DownloadingService"
+            android:exported="true"
+            android:process=":DownloadingService" >
+        </service>
+    </application>
+
+</manifest>
